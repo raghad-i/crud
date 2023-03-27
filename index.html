@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../new project/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class='container py-5'>
+            <table class='table table-striped'>
+                <thead>
+                    <th>product name</th>
+                    <th>product company</th>
+                    <th>product price</th>
+                    <th>product description</th>
+                </thead>
+
+                <tbody id='tableBody'>
+                    
+                </tbody>
+
+            </table>
+
+            <input  onkeyup="search(this.value)" class='form-control my-3' placeholder='search ... '/>
+
+
+        </div>      
+        
+        <div class="container">
+            <div class='form-container' id="form">
+                <div class='form-group'>
+                    <input placeholder='product name'contentEditable = "true" class='form-control' id='productName'/>
+                </div>
+
+                <div class='form-group'>
+                    <input placeholder='product company' contentEditable = "true" class='form-control' id='productCompany' />
+                </div>
+
+                <div class='form-group'>
+                    <input placeholder='product price' contentEditable = "true" class='form-control' id='productPrice' />
+                </div>
+
+
+                <div class='form-group'>
+                    <textarea placeholder="product description" contentEditable = "true" class='form-control' id='productDescription'></textarea>
+                </div>
+
+                <div class='form-group'>
+
+                <button id='addBtn' class='btn btn-info'>add product</button>
+                </div>
+            </div>
+        </div>
+
+        <script src='js/script.js'></script>
+    </body>
+</html>
